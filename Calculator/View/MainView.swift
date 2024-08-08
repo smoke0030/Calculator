@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @EnvironmentObject var viewModel: ViewModel
+    
     var body: some View {
         ZStack {
             Color.black
@@ -16,22 +19,22 @@ struct MainView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    Text("0")
+                    Text(viewModel.value)
                         .font(.system(size: 80, weight: .light))
                         .foregroundColor(.white)
                         .padding(.horizontal, 29)
                 }
                 
-                ForEach(ViewModel.shared.buttons, id: \.self) { row in
+                ForEach(viewModel.buttons, id: \.self) { row in
                     HStack(spacing: 12) {
                         ForEach(row, id: \.self) { item in
                             Button(action: {
-                                //
+                                viewModel.didTap(item: item)
                             }, label: {
                                 Text("\(item.rawValue)")
                                     .frame(
-                                        width: self.buttonWidth(item: item),
-                                        height: self.buttonHeight())
+                                        width: viewModel.buttonWidth(item: item),
+                                        height: viewModel.buttonHeight())
                                     .background(item.buttonsColor)
                                     .foregroundColor(item.buttonsFontColor)
                                     .font(.system(size: 30))
@@ -45,29 +48,9 @@ struct MainView: View {
             .padding(.bottom)
         }
     }
-    
-    func buttonWidth(item: Buttons) -> CGFloat {
-        let spacing: CGFloat = 12
-        let totalSpacing: CGFloat = 5 * spacing
-        let totalZeroSpacing: CGFloat = 4 * spacing
-        let columns: CGFloat = 4
-        let totalWidth = UIScreen.main.bounds.width
-        if item == .zero {
-            return (totalWidth - totalZeroSpacing) / columns * 2
-        }
-        return (totalWidth - totalSpacing) / columns
-    }
-    
-    func buttonHeight() -> CGFloat {
-        let spacing: CGFloat = 12
-        let totalSpacing: CGFloat = 5 * spacing
-        let columns: CGFloat = 4
-        let totalWidth = UIScreen.main.bounds.width
-        return (totalWidth - totalSpacing) / columns
-    }
-    
 }
 
 #Preview {
     MainView()
+        .environmentObject(ViewModel())
 }

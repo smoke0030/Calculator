@@ -13,6 +13,7 @@
 		84C353F82C64F7D100B47491 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C353F72C64F7D100B47491 /* MainView.swift */; };
 		84C353FB2C64F7F100B47491 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C353FA2C64F7F100B47491 /* Model.swift */; };
 		84C353FD2C64F9E900B47491 /* VIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C353FC2C64F9E900B47491 /* VIewModel.swift */; };
+		84F1B53E2C6538F8005B836A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1B53D2C6538F8005B836A /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		84C353F72C64F7D100B47491 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		84C353FA2C64F7F100B47491 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		84C353FC2C64F9E900B47491 /* VIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIewModel.swift; sourceTree = "<group>"; };
+		84F1B53D2C6538F8005B836A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				84C353F62C64F7BB00B47491 /* Model */,
 				84C353F52C64F7B600B47491 /* ViewModel */,
 				84C353F42C64F7AF00B47491 /* View */,
+				84F1B53C2C6538E4005B836A /* Extension */,
 				84C353EA2C64F7A900B47491 /* Assets.xcassets */,
 				84C353EC2C64F7A900B47491 /* Preview Content */,
 			);
@@ -95,6 +98,14 @@
 				84C353FA2C64F7F100B47491 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		84F1B53C2C6538E4005B836A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84F1B53D2C6538F8005B836A /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F1B53E2C6538F8005B836A /* Extension.swift in Sources */,
 				84C353FB2C64F7F100B47491 /* Model.swift in Sources */,
 				84C353E72C64F7A600B47491 /* CalculatorApp.swift in Sources */,
 				84C353FD2C64F9E900B47491 /* VIewModel.swift in Sources */,
