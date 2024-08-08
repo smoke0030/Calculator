@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		84C353E72C64F7A600B47491 /* CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C353E62C64F7A600B47491 /* CalculatorApp.swift */; };
-		84C353E92C64F7A600B47491 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C353E82C64F7A600B47491 /* ContentView.swift */; };
 		84C353EB2C64F7A900B47491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C353EA2C64F7A900B47491 /* Assets.xcassets */; };
 		84C353EE2C64F7A900B47491 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C353ED2C64F7A900B47491 /* Preview Assets.xcassets */; };
+		84C353F82C64F7D100B47491 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C353F72C64F7D100B47491 /* MainView.swift */; };
+		84C353FB2C64F7F100B47491 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C353FA2C64F7F100B47491 /* Model.swift */; };
+		84C353FD2C64F9E900B47491 /* VIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C353FC2C64F9E900B47491 /* VIewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84C353E32C64F7A600B47491 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C353E62C64F7A600B47491 /* CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorApp.swift; sourceTree = "<group>"; };
-		84C353E82C64F7A600B47491 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84C353EA2C64F7A900B47491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C353ED2C64F7A900B47491 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84C353F72C64F7D100B47491 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		84C353FA2C64F7F100B47491 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		84C353FC2C64F9E900B47491 /* VIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				84C353E62C64F7A600B47491 /* CalculatorApp.swift */,
-				84C353E82C64F7A600B47491 /* ContentView.swift */,
+				84C353F62C64F7BB00B47491 /* Model */,
+				84C353F52C64F7B600B47491 /* ViewModel */,
+				84C353F42C64F7AF00B47491 /* View */,
 				84C353EA2C64F7A900B47491 /* Assets.xcassets */,
 				84C353EC2C64F7A900B47491 /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				84C353ED2C64F7A900B47491 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84C353F42C64F7AF00B47491 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84C353F72C64F7D100B47491 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84C353F52C64F7B600B47491 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84C353FC2C64F9E900B47491 /* VIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84C353F62C64F7BB00B47491 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84C353FA2C64F7F100B47491 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C353E92C64F7A600B47491 /* ContentView.swift in Sources */,
+				84C353FB2C64F7F100B47491 /* Model.swift in Sources */,
 				84C353E72C64F7A600B47491 /* CalculatorApp.swift in Sources */,
+				84C353FD2C64F9E900B47491 /* VIewModel.swift in Sources */,
+				84C353F82C64F7D100B47491 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
